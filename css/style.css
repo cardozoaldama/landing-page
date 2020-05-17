@@ -5,6 +5,7 @@
     color2: #34495e
     color3: #3498db
     color4: #fff
+    color5: #111
 
     -- ÍNDICE --
     1. General
@@ -18,7 +19,6 @@
 body {
     text-align: center;
     font: 300 20px/1.7 'Roboto Condensed';
-    background: #945;
 }
 
 .cabecera {
@@ -46,11 +46,99 @@ body {
     background-size: cover;
 }
 
+.nav-bar {
+    height: 63px;
+    background: #2c3e50;
+    border-bottom: 1px dashed #3498db;
+}
+
+.nav-bar a {
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 20px 'Stint Ultra Condensed';
+}
+
+.nav-bar a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.titulo {
+    margin: 20px 0;
+    font: 60px 'Stint Ultra Condensed';
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    border: 2px solid #111;
+    background: #222;
+}
+
 /* 3. Secciones específicas */
+
+.contenido {
+    padding: 80px 0;
+}
+
+.quienes-somos {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.quienes-somos p {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.servicios {
+    background: #34495e;
+    color: #fff;
+}
+
+.tarifas {
+    background: url(../img/dummy-tarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff
+}
+
+.contenedor {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.tarifas p {
+    max-width: 450px;
+}
+
+.localizacion {
+    color: #34495e;
+    padding-bottom: 0;
+}
+
+.localizacion .map img {
+    max-width: 100%;
+    width: 100%;
+}
 
 /* 4. Listas */
 
+
 .lista-servicios {
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,4 +149,34 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    position: relative;
+    width: 150px;
+    height: 190px;
+}
+
+.lista-servicios figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+}
+
+.lista-servicios img {
+    position: relative;
+    z-index: 1000;
+}
+
+.lista-servicios li {
+    padding: 0 30px;
+}
+
+.lista-servicios figcaption {
+    position: relative;
+    left: 0;
+    bottom: -40px;
 }
