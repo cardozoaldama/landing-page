@@ -1,0 +1,64 @@
+/* GUÍA DE ESTILOS
+
+    -- COLORES --
+    color1: #2c3e50
+    color2: #34495e
+    color3: #3498db
+    color4: #fff
+
+    -- ÍNDICE --
+    1. General
+    2. Elementos genéricos
+    3. Secciones específicas
+    4. Listas
+*/
+
+/* 1. General */
+
+body {
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed';
+    background: #945;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #34495e;
+}
+
+.tarifas {
+    text-align: center;
+}
+
+/* 2. Elementos genéricos */
+
+.cabecera {
+    height: 450px;
+    background: url(../img/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+/* 3. Secciones específicas */
+
+/* 4. Listas */
+
+.lista-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-servicios figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
